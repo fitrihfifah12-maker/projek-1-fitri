@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalender Interaktif 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calendar-container">
+    <!-- Header Kalender -->
+    <header class="calendar-header">
+      <button id="prev-btn">&lt;</button>
+      <h2 id="month-year-display">Januari 2026</h2>
+      <button id="next-btn">&gt;</button>
+    </header>
+
+    <!-- Hari dalam Seminggu -->
+    <div class="weekdays">
+      <div>Minggu</div>
+      <div>Senin</div>
+      <div>Selasa</div>
+      <div>Rabu</div>
+      <div>Kamis</div>
+      <div>Jumat</div>
+      <div>Sabtu</div>
+    </div>
+
+    <!-- Grid Tanggal -->
+    <div class="calendar-days" id="calendar-days"></div>
+  </div>
+
+  <!-- Modal Form (Tambah/Edit/Hapus Agenda) -->
+  <div id="event-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modal-title">Kelola Agenda</h3>
+      <p id="selected-date-text"></p>
+      
+      <input type="text" id="event-input" placeholder="Tulis nama agenda/kegiatan...">
+      
+      <div class="modal-actions">
+        <button id="save-btn" class="btn-primary">Simpan</button>
+        <button id="delete-btn" class="btn-danger hidden">Hapus</button>
+        <button id="close-btn" class="btn-secondary">Batal</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
